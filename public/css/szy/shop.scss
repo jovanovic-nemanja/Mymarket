@@ -1,0 +1,245 @@
+
+@import "common";
+@import "top";
+@import "shop-header";
+@import "footer";
+
+
+$bg1:url('/img/szy/inc/bg1.png');//背景图1
+$bg2:url('/img/szy/inc/bg2.png');//背景图2
+
+.header-c-fig{
+  height: 400px;
+  width: 100%;
+  background: #F2F2F2;
+  overflow:hidden; 
+  position:relative;
+  .bd{
+    position:relative; 
+    height:100%; 
+    z-index:0; 
+    height: 100%;
+    width: 100%; 
+    li{ 
+      zoom:1; 
+      vertical-align:middle;
+      position:relative; 
+      height: 100%;
+      width: 100%;  
+    }
+    img{ 
+      height: 100%;
+      width: 100%;  
+      display:block;  
+    }
+  }
+  .hd{ 
+    height:15px; 
+    overflow:hidden; 
+    position:absolute; 
+    right:50%; 
+    bottom:5px; 
+    z-index:1; 
+    ul{ 
+      overflow:hidden; zoom:1;
+    li{ float:left; margin-right:5px;  width:25px; height:25px; line-height:14px; text-align:center; background:#fff; cursor:pointer; }
+    li.on{ background:$defualtColor; color:white; }
+    }
+  }
+  .prev,.next{ 
+    position:absolute; 
+    left:3%; top:50%; 
+    margin-top:-25px; 
+    display:block; width:32px; 
+    height:40px; background:url(/img/szy/lb/slider-arrow.png) -110px 5px no-repeat; 
+    filter:alpha(opacity=50);opacity:0.5;   
+    left:auto; right:3%; background-position:8px 5px; 
+  }
+  .prev:hover,.next:hover{ filter:alpha(opacity=100);opacity:1;  }
+}
+.content{
+  width:$widthMin;
+  min-height: 200px;
+  margin: 15 auto;
+  .ct-left{
+    width:20%;
+    min-height:200px;
+    float: left;
+    .l-info{
+      width:100%;
+      height:380px;
+      border:1px solid $color3;
+      border-top:none;
+      margin-bottom:20px;
+      background:$color4;
+      border-radius:3px;
+
+      span{color:$color2;font-size:$fontSizeMax;margin-left:15px;}
+      .info-top{
+        width:100%;
+        height:40px;
+        background:$bg2;
+        background-size:200px 40px;
+      }
+      .info-title{
+        width:100%;
+        height:50px;
+        border-bottom:1px dashed $color3;
+        color:$color2;
+        font-size:$fontSizeMax;
+        line-height: 60px;
+        b{margin-left:15px;}
+      }
+      .info-list{
+        width:100%;
+        min-height:30px;
+        li{
+          width:94%;
+          height:20px;
+          margin-top:10px;
+          margin-left:6%;
+          font-size:$fontSize;
+          color:$color1;
+          b{color:$color2;}
+          em{color:orange;}
+        }
+      }
+      .info-li{
+        width: 90%;
+        height:30px;
+        background:white;
+        border:1px solid #aaa;
+        margin:15 auto;
+        line-height:30px;
+        img{width:20px;height:20px;margin-top:4px;}
+        text-align: center;
+        color:$color1;
+        cursor: pointer;
+      }
+      .info-li:hover{border-top:2px solid #aaa;}
+    }
+    .l-suggest{
+      width:100%;min-height:200px;border:1px solid $color3;
+      border-radius:3px;
+      .sg-title{
+        width:100%;
+        height:40px;
+        text-align: center;
+        color:$defualtColor;
+        font-size:$fontSizeMax;
+        line-height: 40px;
+        background:#F5F5F5;
+      }
+      .sg-list{
+        width:80%;
+        height:260px;
+        border-bottom:1px dashed $color3;
+        margin-left:10%;
+        margin-top:15px;
+        .list-img{width:100%;height:180px;border:1px solid #D6D6D6;
+          img{width:96%;height:96%;margin:2%}}
+        .list-title{width:100%;height:40px;line-height:20px;overflow: hidden;margin-top:4px;
+          a{font-size:$fontSize;color:$color1;}
+        }
+        .list-money{width:100%;height:20px;text-align:center;font-size:$fontSize;line-height:20px;color:orange;margin-top:4px;font-weight:bold;}
+      }
+    }
+  }
+  .ct-right{
+    width:78%;
+    min-height:200px;
+    float: right;
+    .r-desc{
+      border-radius:3px;
+      width:100%;
+      height:240px;
+      border:1px solid $color3;
+      background:#F5F5F5;
+      .desc-bg{        
+        width:100%;
+        height:40px;
+        background:$bg1;
+        background-size:100% 40px;}
+      }
+      .desc-text{width:97%;height:76%;background:white;margin:1% auto;
+        span{margin-left:15px;color:$color2;font-size:$fontSizeMax;}
+        .text{
+          width:96%;
+          height:70%;
+          margin:6px auto;
+          text-indent:2em;
+          color:$color1;
+          font-size:$fontSize;
+          overflow: hidden;
+        }
+      }
+    .product-title{
+      width: 100%;
+      height: 50px;
+      border-bottom:2px solid $defualtColor;
+      line-height: 60px;
+      font-size: $fontSizeMax;
+      color:$color2;
+      b{color:$defualtColor;}
+    }
+    .product-order{
+      width: 100%;
+      height: 30px;
+      border:1px solid $color3;
+      line-height: 30px;
+      font-size: $fontSize;
+      color:$color2;
+      margin-top:10px;
+      background:$color4;
+      .active{background:white;}
+      li{float:left;border-right:1px solid $color3;min-width:80px;height:100%;text-align:center;cursor:pointer;
+        span{width:8px;height:10px;display: inline-block;margin-top:6px;}
+        .jt-top{background:url('/img/szy/inc/jt-top.png') no-repeat;}
+        .jt-footer{background:url('/img/szy/inc/jt-footer.png') no-repeat;}
+      }
+      li:active{background:white;}
+    }
+    .product-list{
+      width: 100%;
+      margin-top:15px;
+      background:red;
+      .list-single{
+        width: 22%;
+        height:290px;
+        border:1px solid $color3;
+        float: left;
+        margin-right:3.7%; 
+        margin-top:20px;
+        .sin-img{
+          width:96%;
+          height:60%;
+          margin:3px auto;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .sin-money{
+          width:94%;height:6%;margin:5px auto;color:$color1;font-size:$fontSize;font-weight:bold;
+          b{color:orange;}
+        }
+        .sin-title{color:$color2;width:94%;height:34px;margin:2px auto;overflow:hidden;line-height:17px;}
+        .sin-sell{width:100%;height:12%;margin-top:17px;
+          li{float:left;border-top:1px solid $color3;width:50%;height:98%;
+            color:$color1;font-size:$fontSizeMin;line-height:34px;text-align:center;cursor:pointer;
+            b{color:orange;}
+          }
+          li:hover{background:$color4;}
+          li:nth-child(1n+2){border-right:none;}
+          li:nth-child(1n+2) b{color:$defualtColor;}
+        }
+      }
+      .list-single:nth-child(4n+4){
+        margin-right:0;
+      }
+    }
+  }
+  .page{width:100%;height:120px;float:left;
+    .center{width:60%;height:40%;margin-top:50px;margin-right:10%;float:right;}
+  }
+}

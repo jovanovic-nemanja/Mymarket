@@ -1,0 +1,817 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: '宋体'; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+input, select, button, a {
+  outline: none; }
+
+/* line 5, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+
+/* line 103, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+/* line 32, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+html, body {
+  font-size: 12px; }
+
+.right-fixed {
+  width: 46px;
+  height: 100%;
+  position: fixed;
+  right: 0px;
+  z-index: 10000; }
+  .right-fixed .r-fixed-l {
+    width: 40px;
+    height: 100%;
+    float: left; }
+    .right-fixed .r-fixed-l .l-list {
+      width: 100%;
+      height: 200px;
+      position: relative;
+      top: 45%; }
+      .right-fixed .r-fixed-l .l-list li {
+        width: 100%;
+        height: 34px;
+        margin-top: 3px;
+        background: #31C4A8; }
+        .right-fixed .r-fixed-l .l-list li a {
+          margin: 3px 3px; }
+        .right-fixed .r-fixed-l .l-list li img {
+          width: 60%;
+          height: 60%;
+          margin: 6px 6px; }
+      .right-fixed .r-fixed-l .l-list li:hover {
+        background: #2EAF98; }
+  .right-fixed .r-fixed-r {
+    width: 6px;
+    height: 100%;
+    background: #31C4A8;
+    float: left; }
+
+.header-a {
+  width: 100%;
+  height: 30px;
+  background: #F2F2F2;
+  border-bottom: 1px solid #DEDEDE; }
+
+.header-nav {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto; }
+  .header-nav a:hover {
+    color: #31C4A8; }
+
+.header-nav1 {
+  width: 30%;
+  height: 100%;
+  float: left;
+  line-height: 30px; }
+  .header-nav1 a {
+    font-size: 12px;
+    color: #A5A5A5; }
+
+.header-nav2 {
+  width: 70%;
+  height: 100%;
+  float: right; }
+  .header-nav2 li {
+    width: 62px;
+    height: 100%;
+    float: right;
+    line-height: 30px;
+    list-style-type: none;
+    font-size: 12px;
+    color: #A5A5A5; }
+    .header-nav2 li a {
+      font-size: 12px;
+      color: #A5A5A5; }
+
+.header {
+  width: 100%;
+  min-width: 1200px;
+  height: 600px;
+  background: #ccc;
+  margin: 0;
+  padding: 0; }
+  .header .header-b {
+    width: 100%;
+    height: 130px;
+    background: white; }
+  .header .header-nav-b {
+    height: 100%;
+    width: 200px;
+    float: left; }
+  .header .header-nav-b1 {
+    height: 70%;
+    width: 100%;
+    margin-top: 15px; }
+    .header .header-nav-b1 img {
+      height: 80px;
+      width: 100%; }
+  .header .header-nav-b2 {
+    height: 20%;
+    width: 100%; }
+    .header .header-nav-b2 span {
+      color: #4B4B4B;
+      font-size: 12px;
+      line-height: 23px; }
+      .header .header-nav-b2 span a {
+        color: #4B4B4B;
+        font-size: 12px; }
+      .header .header-nav-b2 span a:hover {
+        color: #31C4A8; }
+  .header .header-nav-b2-span1 {
+    float: left; }
+  .header .header-nav-b2-span2 {
+    float: right; }
+    .header .header-nav-b2-span2 img {
+      width: 15px;
+      height: 15px; }
+  .header .header-nav-right {
+    width: 800px;
+    height: 100%;
+    float: right; }
+  .header .header-nav-right-l {
+    width: 100%;
+    height: 100%; }
+  .header .header-nav-right-r {
+    width: 30%;
+    height: 100%; }
+  .header .header-nav-right-la {
+    width: 100%;
+    height: 30%;
+    margin-top: 35px;
+    float: left; }
+    .header .header-nav-right-la input {
+      width: 380px;
+      height: 35px;
+      border: 2px solid #31C4A8;
+      color: #5B5B5B;
+      font-size: 15px;
+      float: left;
+      border-right: none; }
+    .header .header-nav-right-la button {
+      width: 90px;
+      height: 35px;
+      margin: 0;
+      padding: 0;
+      float: left;
+      color: white;
+      font-size: 15px;
+      font-weight: bold; }
+  .header .header-nav-right-la-bt1 {
+    background: #31C4A8;
+    border: 2px solid #31C4A8;
+    cursor: pointer; }
+  .header .header-nav-right-la-bt1:hover {
+    background: #2CAF95;
+    border: 2px solid #2CAF95; }
+  .header .header-nav-right-la-bt2 {
+    background: #BC7EDB;
+    border: 2px solid #BC7EDB;
+    cursor: pointer; }
+  .header .header-nav-right-la-bt2:hover {
+    background: #AD71C9;
+    border: 2px solid #AD71C9; }
+  .header .header-nav-right-l-div {
+    width: 380px;
+    height: 30px;
+    text-align: left;
+    margin-top: 5px;
+    color: #31C4A8;
+    font-size: 14px;
+    overflow: hidden; }
+    .header .header-nav-right-l-div a {
+      color: #A5A5A5;
+      font-size: 13px; }
+    .header .header-nav-right-l-div a:hover {
+      color: #31C4A8; }
+  .header .header-nav-right-la-cart {
+    width: 160px;
+    height: 35px;
+    float: right;
+    border: 1px solid #FC8950;
+    color: #FC8950;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer; }
+    .header .header-nav-right-la-cart a {
+      color: #FC8950;
+      font-size: 15px; }
+  .header .header-nav-right-la-cart:hover {
+    border: 1px solid #FC8950;
+    border-top: 2px solid #FC8950; }
+  .header .header-c {
+    width: 100%;
+    height: 440px; }
+
+.header-a-hover a:hover {
+  color: #31C4A8; }
+
+.header-theme {
+  width: 100%;
+  height: 40px;
+  background: #31C4A8; }
+
+.header-theme-center {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto; }
+  .header-theme-center li {
+    list-style-type: none;
+    width: 120px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    background: #31BCA2;
+    margin-right: 5px;
+    cursor: pointer; }
+    .header-theme-center li a {
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 40px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: '宋体'; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+input, select, button, a {
+  outline: none; }
+
+/* line 5, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+
+/* line 103, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+/* line 32, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+html, body {
+  font-size: 12px; }
+
+.right-fixed {
+  width: 46px;
+  height: 100%;
+  position: fixed;
+  right: 0px;
+  z-index: 10000; }
+  .right-fixed .r-fixed-l {
+    width: 40px;
+    height: 100%;
+    float: left; }
+    .right-fixed .r-fixed-l .l-list {
+      width: 100%;
+      height: 200px;
+      position: relative;
+      top: 45%; }
+      .right-fixed .r-fixed-l .l-list li {
+        width: 100%;
+        height: 34px;
+        margin-top: 3px;
+        background: #31C4A8; }
+        .right-fixed .r-fixed-l .l-list li a {
+          margin: 3px 3px; }
+        .right-fixed .r-fixed-l .l-list li img {
+          width: 60%;
+          height: 60%;
+          margin: 6px 6px; }
+      .right-fixed .r-fixed-l .l-list li:hover {
+        background: #2EAF98; }
+  .right-fixed .r-fixed-r {
+    width: 6px;
+    height: 100%;
+    background: #31C4A8;
+    float: left; }
+
+.footer {
+  width: 100%;
+  min-height: 200px;
+  background: #F5F5F5;
+  border-top: 3px solid #31C4A8;
+  float: left;
+  margin-top: 10px; }
+  .footer .footer-center {
+    width: 1200px;
+    min-height: 200px;
+    margin: auto; }
+    .footer .footer-center .c-top {
+      width: 100%;
+      height: 150px;
+      border-bottom: 1px solid #ccc; }
+      .footer .footer-center .c-top li, .footer .footer-center .c-top .space {
+        height: 70%;
+        float: left;
+        margin-top: 20px; }
+      .footer .footer-center .c-top li {
+        width: 12.25%; }
+        .footer .footer-center .c-top li .li-t {
+          width: 100%;
+          height: 40%;
+          line-height: 20px; }
+          .footer .footer-center .c-top li .li-t span {
+            width: 23%;
+            height: 80%;
+            display: inline-block; }
+          .footer .footer-center .c-top li .li-t .span1 {
+            background: url("/img/szy/inc/pay-mh.png") no-repeat; }
+          .footer .footer-center .c-top li .li-t .span2 {
+            background: url("/img/szy/inc/merchant.png") no-repeat; }
+          .footer .footer-center .c-top li .li-t .span3 {
+            background: url("/img/szy/inc/cantact-us.png") no-repeat; }
+          .footer .footer-center .c-top li .li-t .span4 {
+            background: url("/img/szy/inc/help.png") no-repeat; }
+          .footer .footer-center .c-top li .li-t div {
+            width: 70%;
+            height: 80%;
+            line-height: 40px;
+            float: right; }
+            .footer .footer-center .c-top li .li-t div b {
+              font-size: 15px;
+              color: #4D4D4D; }
+        .footer .footer-center .c-top li .li-f {
+          width: 100%;
+          height: 50%; }
+          .footer .footer-center .c-top li .li-f div {
+            width: 100%;
+            height: 48%; }
+            .footer .footer-center .c-top li .li-f div a {
+              font-size: 12px;
+              color: #4D4D4D;
+              margin-right: 3px; }
+            .footer .footer-center .c-top li .li-f div a:hover {
+              color: #31C4A8; }
+      .footer .footer-center .c-top .space {
+        width: 17%; }
+        .footer .footer-center .c-top .space div {
+          width: 50%;
+          height: 100%;
+          border-right: 1px solid #6A6A6A; }
+    .footer .footer-center .c-footer {
+      width: 100%;
+      height: 170px;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+      .footer .footer-center .c-footer .f-l {
+        width: 150px;
+        height: 150px;
+        border: 1px solid #ccc;
+        float: left; }
+        .footer .footer-center .c-footer .f-l img {
+          width: 150px;
+          height: 150px; }
+      .footer .footer-center .c-footer .f-r {
+        min-width: 80%;
+        height: 150px;
+        margin-left: 5%;
+        float: left; }
+        .footer .footer-center .c-footer .f-r li {
+          width: 100%;
+          height: 15%;
+          margin-top: 10px;
+          color: #4D4D4D;
+          font-size: 15px; }
+          .footer .footer-center .c-footer .f-r li a {
+            color: #4D4D4D;
+            font-size: 15px; }
+          .footer .footer-center .c-footer .f-r li a:hover {
+            color: #31C4A8; }
+        .footer .footer-center .c-footer .f-r li:nth-child(5n+1) {
+          margin-top: 0px; }
+
+.header-c-fig {
+  height: 400px;
+  width: 100%;
+  background: #F2F2F2;
+  overflow: hidden;
+  position: relative; }
+  .header-c-fig .bd {
+    position: relative;
+    height: 100%;
+    z-index: 0;
+    height: 100%;
+    width: 100%; }
+    .header-c-fig .bd li {
+      zoom: 1;
+      vertical-align: middle;
+      position: relative;
+      height: 100%;
+      width: 100%; }
+    .header-c-fig .bd img {
+      height: 100%;
+      width: 100%;
+      display: block; }
+  .header-c-fig .hd {
+    height: 15px;
+    overflow: hidden;
+    position: absolute;
+    right: 50%;
+    bottom: 5px;
+    z-index: 1; }
+    .header-c-fig .hd ul {
+      overflow: hidden;
+      zoom: 1; }
+      .header-c-fig .hd ul li {
+        float: left;
+        margin-right: 5px;
+        width: 25px;
+        height: 25px;
+        line-height: 14px;
+        text-align: center;
+        background: #fff;
+        cursor: pointer; }
+      .header-c-fig .hd ul li.on {
+        background: #31C4A8;
+        color: white; }
+  .header-c-fig .prev, .header-c-fig .next {
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    margin-top: -25px;
+    display: block;
+    width: 32px;
+    height: 40px;
+    background: url(/img/szy/lb/slider-arrow.png) -110px 5px no-repeat;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    left: auto;
+    right: 3%;
+    background-position: 8px 5px; }
+  .header-c-fig .prev:hover, .header-c-fig .next:hover {
+    filter: alpha(opacity=100);
+    opacity: 1; }
+
+.content {
+  width: 1200px;
+  min-height: 200px;
+  margin: 15 auto; }
+  .content .ct-left {
+    width: 20%;
+    min-height: 200px;
+    float: left; }
+    .content .ct-left .l-info {
+      width: 100%;
+      height: 380px;
+      border: 1px solid #ccc;
+      border-top: none;
+      margin-bottom: 20px;
+      background: #F5F5F5;
+      border-radius: 3px; }
+      .content .ct-left .l-info span {
+        color: #4D4D4D;
+        font-size: 20px;
+        margin-left: 15px; }
+      .content .ct-left .l-info .info-top {
+        width: 100%;
+        height: 40px;
+        background: url("/img/szy/inc/bg2.png");
+        background-size: 200px 40px; }
+      .content .ct-left .l-info .info-title {
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px dashed #ccc;
+        color: #4D4D4D;
+        font-size: 20px;
+        line-height: 60px; }
+        .content .ct-left .l-info .info-title b {
+          margin-left: 15px; }
+      .content .ct-left .l-info .info-list {
+        width: 100%;
+        min-height: 30px; }
+        .content .ct-left .l-info .info-list li {
+          width: 94%;
+          height: 20px;
+          margin-top: 10px;
+          margin-left: 6%;
+          font-size: 15px;
+          color: #6A6A6A; }
+          .content .ct-left .l-info .info-list li b {
+            color: #4D4D4D; }
+          .content .ct-left .l-info .info-list li em {
+            color: orange; }
+      .content .ct-left .l-info .info-li {
+        width: 90%;
+        height: 30px;
+        background: white;
+        border: 1px solid #aaa;
+        margin: 15 auto;
+        line-height: 30px;
+        text-align: center;
+        color: #6A6A6A;
+        cursor: pointer; }
+        .content .ct-left .l-info .info-li img {
+          width: 20px;
+          height: 20px;
+          margin-top: 4px; }
+      .content .ct-left .l-info .info-li:hover {
+        border-top: 2px solid #aaa; }
+    .content .ct-left .l-suggest {
+      width: 100%;
+      min-height: 200px;
+      border: 1px solid #ccc;
+      border-radius: 3px; }
+      .content .ct-left .l-suggest .sg-title {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        color: #31C4A8;
+        font-size: 20px;
+        line-height: 40px;
+        background: #F5F5F5; }
+      .content .ct-left .l-suggest .sg-list {
+        width: 80%;
+        height: 260px;
+        border-bottom: 1px dashed #ccc;
+        margin-left: 10%;
+        margin-top: 15px; }
+        .content .ct-left .l-suggest .sg-list .list-img {
+          width: 100%;
+          height: 180px;
+          border: 1px solid #D6D6D6; }
+          .content .ct-left .l-suggest .sg-list .list-img img {
+            width: 96%;
+            height: 96%;
+            margin: 2%; }
+        .content .ct-left .l-suggest .sg-list .list-title {
+          width: 100%;
+          height: 40px;
+          line-height: 20px;
+          overflow: hidden;
+          margin-top: 4px; }
+          .content .ct-left .l-suggest .sg-list .list-title a {
+            font-size: 15px;
+            color: #6A6A6A; }
+        .content .ct-left .l-suggest .sg-list .list-money {
+          width: 100%;
+          height: 20px;
+          text-align: center;
+          font-size: 15px;
+          line-height: 20px;
+          color: orange;
+          margin-top: 4px;
+          font-weight: bold; }
+  .content .ct-right {
+    width: 78%;
+    min-height: 200px;
+    float: right; }
+    .content .ct-right .r-desc {
+      border-radius: 3px;
+      width: 100%;
+      height: 240px;
+      border: 1px solid #ccc;
+      background: #F5F5F5; }
+      .content .ct-right .r-desc .desc-bg {
+        width: 100%;
+        height: 40px;
+        background: url("/img/szy/inc/bg1.png");
+        background-size: 100% 40px; }
+    .content .ct-right .desc-text {
+      width: 97%;
+      height: 76%;
+      background: white;
+      margin: 1% auto; }
+      .content .ct-right .desc-text span {
+        margin-left: 15px;
+        color: #4D4D4D;
+        font-size: 20px; }
+      .content .ct-right .desc-text .text {
+        width: 96%;
+        height: 70%;
+        margin: 6px auto;
+        text-indent: 2em;
+        color: #6A6A6A;
+        font-size: 15px;
+        overflow: hidden; }
+    .content .ct-right .product-title {
+      width: 100%;
+      height: 50px;
+      border-bottom: 2px solid #31C4A8;
+      line-height: 60px;
+      font-size: 20px;
+      color: #4D4D4D; }
+      .content .ct-right .product-title b {
+        color: #31C4A8; }
+    .content .ct-right .product-order {
+      width: 100%;
+      height: 30px;
+      border: 1px solid #ccc;
+      line-height: 30px;
+      font-size: 15px;
+      color: #4D4D4D;
+      margin-top: 10px;
+      background: #F5F5F5; }
+      .content .ct-right .product-order .active {
+        background: white; }
+      .content .ct-right .product-order li {
+        float: left;
+        border-right: 1px solid #ccc;
+        min-width: 80px;
+        height: 100%;
+        text-align: center;
+        cursor: pointer; }
+        .content .ct-right .product-order li span {
+          width: 8px;
+          height: 10px;
+          display: inline-block;
+          margin-top: 6px; }
+        .content .ct-right .product-order li .jt-top {
+          background: url("/img/szy/inc/jt-top.png") no-repeat; }
+        .content .ct-right .product-order li .jt-footer {
+          background: url("/img/szy/inc/jt-footer.png") no-repeat; }
+      .content .ct-right .product-order li:active {
+        background: white; }
+    .content .ct-right .product-list {
+      width: 100%;
+      margin-top: 15px;
+      background: red; }
+      .content .ct-right .product-list .list-single {
+        width: 22%;
+        height: 290px;
+        border: 1px solid #ccc;
+        float: left;
+        margin-right: 3.7%;
+        margin-top: 20px; }
+        .content .ct-right .product-list .list-single .sin-img {
+          width: 96%;
+          height: 60%;
+          margin: 3px auto; }
+          .content .ct-right .product-list .list-single .sin-img img {
+            width: 100%;
+            height: 100%; }
+        .content .ct-right .product-list .list-single .sin-money {
+          width: 94%;
+          height: 6%;
+          margin: 5px auto;
+          color: #6A6A6A;
+          font-size: 15px;
+          font-weight: bold; }
+          .content .ct-right .product-list .list-single .sin-money b {
+            color: orange; }
+        .content .ct-right .product-list .list-single .sin-title {
+          color: #4D4D4D;
+          width: 94%;
+          height: 34px;
+          margin: 2px auto;
+          overflow: hidden;
+          line-height: 17px; }
+        .content .ct-right .product-list .list-single .sin-sell {
+          width: 100%;
+          height: 12%;
+          margin-top: 17px; }
+          .content .ct-right .product-list .list-single .sin-sell li {
+            float: left;
+            border-top: 1px solid #ccc;
+            width: 50%;
+            height: 98%;
+            color: #6A6A6A;
+            font-size: 12px;
+            line-height: 34px;
+            text-align: center;
+            cursor: pointer; }
+            .content .ct-right .product-list .list-single .sin-sell li b {
+              color: orange; }
+          .content .ct-right .product-list .list-single .sin-sell li:hover {
+            background: #F5F5F5; }
+          .content .ct-right .product-list .list-single .sin-sell li:nth-child(1n+2) {
+            border-right: none; }
+          .content .ct-right .product-list .list-single .sin-sell li:nth-child(1n+2) b {
+            color: #31C4A8; }
+      .content .ct-right .product-list .list-single:nth-child(4n+4) {
+        margin-right: 0; }
+  .content .page {
+    width: 100%;
+    height: 120px;
+    float: left; }
+    .content .page .center {
+      width: 60%;
+      height: 40%;
+      margin-top: 50px;
+      margin-right: 10%;
+      float: right; }
+
+/*# sourceMappingURL=shop.css.map */

@@ -1,0 +1,57 @@
+
+@import "common";
+$loginBg:url('/img/szy/inc/login-bg.png') no-repeat;
+$loginUser:url('/img/szy/inc/white-user.png') no-repeat;
+$loginPass:url('/img/szy/inc/white-suo.png') no-repeat;
+
+.login{width:100%;height:100%;
+	.l-title{width:100%;height:100px;border-bottom:1px solid $color3;
+		.center{width:$widthMin;margin:0 auto;height:100%;
+			.left{height:75px;width:226px;position:relative;top:20px;float:left;
+				img{width:100%;height:100%;}
+			}
+			.right{
+				width:600px;height:100%;float:right;
+				li{width:30%;height:40px;float:left;margin-left:3%;margin-top:50px;
+					img{width:33px;height:33px;}
+					span{height:35px;min-width:50%;font-size:$fontSizeMax;color:$color1;position:relative;bottom:10px;}
+				}
+			}	
+		}
+	}
+	.content{width:100%;height:650px;background:$loginBg;margin-top:60px;
+		.operate{width:340px;min-height:300px;background:white;margin-left:60%;position:relative;top:20%;padding:10px;
+			.center{width:90%;height:280px;margin:15px;
+				li{width:100%;height:15%;margin-top:5%;
+					.user-s{width:14%;height:37px;float:left;background:$color3;
+						div{width:100%;height:100%;background:$loginUser;margin-top:12px;margin-left:15px;}
+					}
+					input{border:1px solid $color3;border-left:none;color:$color2;font-size:$fontSize;}
+					.pass-s{width:14%;height:37px;float:left;background:$color3;
+						div{width:100%;height:100%;background:$loginPass;margin-top:12px;margin-left:15px;}
+					}
+					.user-i{width:85%;height:35px;}
+					.pass-i{width:85%;height:35px;}
+					.submit{width:100%;height:35px;background:#FAC14B;color:white;font-size:$fontSizeMax;cursor:pointer;border:none;}
+					.submit:active{background:orange;}
+					.check{width:50%;height:100%;font-size:$fontSize;color:$color1;
+						input{width:16px;height:16px;border:1px solid #ccc;background:white;margin-top:3px;}
+					}
+					.wj{float:right;a{font-size:$fontSize;color:$color1;}}
+					.register{float:right;a{font-size:$fontSize;color:orange;}}
+				}
+				.border{border-bottom:1px solid $color3;color:$color2;font-size:$fontSizeMax;
+					div{float:right;font-size:$fontSize;color:$color1;a{font-size:$fontSize;color:orange;}}
+				}
+			}
+		}
+	}
+	.footer{
+		width:500px;
+		height:100px;
+		line-height: 100px;
+		font-size:$fontSizeMin;
+		color: $color3;
+		margin:auto;
+	}
+}

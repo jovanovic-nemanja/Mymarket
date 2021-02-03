@@ -1,0 +1,318 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: '宋体'; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+input, select, button, a {
+  outline: none; }
+
+.header {
+  width: 100%;
+  min-width: 1200px;
+  height: 260px;
+  margin: 0;
+  padding: 0; }
+
+.header-a {
+  width: 100%;
+  height: 35px;
+  background: #3ECEB5;
+  border-bottom: 1px solid #31B29B; }
+
+.header-b {
+  width: 100%;
+  height: 50px;
+  background: #39C6AD; }
+
+.header-c {
+  width: 100%;
+  height: 175px;
+  background: url("inc/nav-bg.png"); }
+
+.header-nav {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto; }
+
+.header-nav1 {
+  width: 30%;
+  height: 100%;
+  float: left;
+  line-height: 35px; }
+
+.header-nav1 a {
+  font-size: 14px;
+  color: white; }
+
+.header-nav1 a b {
+  color: #F5BF76; }
+
+.header-nav2 {
+  width: 70%;
+  height: 100%;
+  float: right; }
+
+.header-nav2 li {
+  width: 70px;
+  height: 100%;
+  float: right;
+  line-height: 35px;
+  list-style-type: none;
+  font-size: 14px;
+  color: white; }
+
+.header-nav2 li a {
+  font-size: 14px;
+  color: white; }
+
+.header-nav-b {
+  height: 100%;
+  width: 200px;
+  float: left; }
+
+.header-nav-b1 {
+  height: 80%;
+  width: 100%;
+  margin-top: 10%; }
+
+.header-nav-b1 img {
+  height: 60%;
+  width: 100%; }
+
+.header-nav-b2 {
+  height: 20%;
+  width: 100%; }
+
+.header-nav-b2 span {
+  color: #4B4B4B;
+  font-size: 12px;
+  line-height: 23px; }
+
+.header-nav-b2 span a {
+  color: #4B4B4B;
+  font-size: 12px; }
+
+.header-nav-b2-span1 {
+  float: left; }
+
+.header-nav-b2-span2 {
+  float: right; }
+
+.header-nav-b2-span2 img {
+  width: 15px;
+  height: 15px; }
+
+.header-nav-right {
+  width: 800px;
+  height: 100%;
+  float: right; }
+
+.header-nav-right-l {
+  width: 100%;
+  height: 100%; }
+
+.header-nav-right-r {
+  width: 30%;
+  height: 100%; }
+
+.header-nav-right-la {
+  width: 100%;
+  height: 30%;
+  margin-top: 5%;
+  float: left; }
+
+.header-nav-right-la input {
+  width: 400px;
+  height: 40px;
+  border: 2px solid #FFB24A;
+  color: #5B5B5B;
+  font-size: 15px;
+  float: left;
+  border-right: none;
+  border-left: none; }
+
+.header-nav-right-la button {
+  width: 90px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  float: left;
+  color: white;
+  font-size: 15px;
+  font-weight: bold; }
+
+.header-nav-right-la select {
+  width: 70px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  float: left;
+  color: #BCBCBC;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background: white;
+  border-right: none; }
+
+.header-nav-right-la select option {
+  text-align: center; }
+
+.header-nav-right-la-bt1 {
+  background: #FFB24A;
+  border: 2px solid #FFB24A;
+  cursor: pointer; }
+
+.header-nav-right-l-div {
+  width: 380px;
+  height: 30px;
+  text-align: left;
+  margin-top: 5px;
+  color: white;
+  font-size: 14px; }
+
+.header-nav-right-l-div span {
+  color: white;
+  font-size: 12px; }
+
+.header-nav-right-l-div a {
+  color: white;
+  font-size: 14px; }
+
+.header-nav-right-la-cart {
+  width: 160px;
+  height: 35px;
+  float: right;
+  border: 1px solid #FFB24A;
+  color: #FF6740;
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+  background: white; }
+
+.header-nav-right-la-cart a {
+  color: #FF6740;
+  font-size: 15px;
+  font-weight: 550; }
+
+.header-b-menu {
+  width: 200px;
+  height: 100%;
+  background: #21B699;
+  font-size: 18px;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  position: relative; }
+  .header-b-menu .menu-title {
+    width: 100%;
+    height: 80%; }
+
+.menu-list {
+  width: 100%;
+  min-height: 400px;
+  position: absolute;
+  top: 50px;
+  display: none;
+  z-index: 1000; }
+  .menu-list li {
+    width: 100%;
+    height: 73.5px;
+    background: #E8E8E8;
+    margin-top: 2px; }
+    .menu-list li .c-violet, .menu-list li .c-red, .menu-list li .c-blue, .menu-list li .c-green, .menu-list li .c-yellow {
+      width: 5px;
+      height: 100%;
+      float: left; }
+    .menu-list li .c-violet {
+      background: #B59CC4; }
+    .menu-list li .c-red {
+      background: #F77871; }
+    .menu-list li .c-blue {
+      background: #4DC1E8; }
+    .menu-list li .c-green {
+      background: #31C4A8; }
+    .menu-list li .c-yellow {
+      background: #FFB24A; }
+    .menu-list li .img {
+      height: 85%;
+      width: 30%;
+      float: left; }
+      .menu-list li .img img {
+        width: 20px;
+        height: 20px;
+        margin-left: 20px;
+        margin-top: 15px; }
+    .menu-list li .right {
+      height: 100%;
+      width: 55%;
+      float: left;
+      text-align: left; }
+      .menu-list li .right .r-class a, .menu-list li .right .f-h {
+        color: #4D4D4D;
+        font-size: 20px; }
+      .menu-list li .right .r-class {
+        width: 85%;
+        height: 50%;
+        float: left;
+        overflow: hidden; }
+      .menu-list li .right .f-h {
+        width: 15%;
+        height: 50%;
+        float: left;
+        color: #6A6A6A;
+        font-size: 20px;
+        font-weight: bold; }
+      .menu-list li .right .x-class {
+        width: 100%;
+        height: 60%;
+        float: left;
+        color: #6A6A6A;
+        font-size: 12px;
+        overflow: hidden;
+        position: relative;
+        top: -8px; }
+      .menu-list li .right .hide-class {
+        width: 400px;
+        min-height: 200px;
+        position: relative;
+        background: white;
+        left: 135px;
+        display: none;
+        border: 1px solid #31C4A8;
+        border-radius: 5px;
+        border-bottom: 2px solid #31C4A8;
+        text-align: left;
+        padding: 10px; }
+        .menu-list li .right .hide-class div {
+          width: 96%;
+          height: 90%;
+          padding: 2px;
+          position: absolute;
+          top: -5px;
+          overflow: hidden; }
+          .menu-list li .right .hide-class div h5 {
+            float: left;
+            margin-left: 10px; }
+          .menu-list li .right .hide-class div a {
+            color: #6A6A6A;
+            font-size: 15px; }
+          .menu-list li .right .hide-class div a:hover {
+            color: #31C4A8; }
+  .menu-list li:hover {
+    background: white; }
+    .menu-list li:hover .f-h, .menu-list li:hover .r-class a {
+      color: #31C4A8; }
+  .menu-list li:nth-child(100n+1) {
+    margin-top: 0px; }
+
+/*# sourceMappingURL=header.css.map */

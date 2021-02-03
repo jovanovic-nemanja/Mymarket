@@ -1,0 +1,170 @@
+$defualtColor: #31C4A8;//默认主色调
+$fontSizeMin: 12px;//字体小号
+$fontSize: 15px;//字体中号
+$fontSizeMax: 20px;//字体大号
+$widthMin: 1200px;//网站框架最小宽度
+$color1:#6A6A6A;//淡灰色
+$color2:#4D4D4D;//深灰色
+$color3:#ccc;//边框灰色
+$color4:#F5F5F5;//淡灰色背景
+$color5:#EDEDED;//灰色
+
+.bg-green{background:$defualtColor;}
+.bg-red{background:#F77872;}
+.bg-blue{background:#50C1E9;}
+.bg-purple{background:#B69BC6;}
+.bg-orange{background:#FFB24A;}
+
+.z-green{color:$defualtColor;}
+.z-red{color:#F77872;}
+.z-blue{color:#50C1E9;}
+.z-purple{color:#B69BC6;}
+.z-orange{color:#FFB24A;}
+
+.z-green:hover{color: #DEF9F4;}
+.z-red:hover{color: #FAD2D2;}
+.z-blue:hover{color: #CDEFF9;}
+.z-purple:hover{color: #F5EDFA;}
+.z-orange:hover{color: #FCEBD9;}
+
+.bd-green{border-right:2px solid $defualtColor;}
+.bd-red{border-right:2px solid #F77872;}
+.bd-blue{border-right:2px solid #50C1E9;}
+.bd-purple{border-right:2px solid #B69BC6;}
+.bd-orange{border-right:2px solid #FFB24A;}
+
+
+.p-bg-green{background:#DEF9F4;color:$defualtColor;}
+.p-bg-red{background:#FAD2D2;color:#F77872;}
+.p-bg-blue{background:#CDEFF9;color:#50C1E9;}
+.p-bg-purple{background:#F5EDFA;color:#B69BC6;}
+.p-bg-orange{background:#FCEBD9;color:#FFB24A;}
+
+.hv-green,.hv-red,.hv-blue,.hv-purple,.hv-orange{background:#ECF0F1;}
+.hv-green:hover{background:$defualtColor;}
+.hv-red:hover{background:#F77872;}
+.hv-blue:hover{background:#50C1E9;}
+.hv-purple:hover{background:#B69BC6;}
+.hv-orange:hover{background:#FFB24A;}
+
+*{margin:0;
+ padding:0; 
+ list-style:none; 
+ font-family:'宋体';
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration:none;
+}
+
+input,select,button,a{
+  outline:none;
+}
+/* line 5, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1,h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+a{ text-decoration: none;}
+
+html,body{font-size:12px;}
+
+.right-fixed{
+  width:46px;
+  height: 100%;
+  position:fixed;
+  right:0px;
+  z-index: 10000;
+  .r-fixed-l{
+    width:40px;
+    height: 100%;
+    float: left;
+    .l-list{
+      width: 100%;
+      height: 200px;
+      position:relative;
+      top: 45%;
+      li{
+        width: 100%;
+        height: 34px;
+        margin-top:3px;
+        background:$defualtColor;
+        a{margin:3px 3px;}
+        img{width:60%;height:60%;margin:6px 6px;}
+      }
+      li:hover{
+        background:#2EAF98;
+      }
+    }
+  }
+  .r-fixed-r{
+    width:6px;
+    height: 100%;
+    background:$defualtColor;
+    float: left;
+  }
+}

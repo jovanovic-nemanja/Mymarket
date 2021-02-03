@@ -1,0 +1,30 @@
+
+.top{
+  width:1200px;height:112px;margin: 0 auto;
+  .logo,.search,.shoppingCart{float:left}
+  .logo{margin:9px 142px 31px 0px;background:white;}
+  .search{
+    width:610px;float:right;
+    input{width:450px;height:34px;border:3px solid #3eceb5;outline:none;font-size:$fontSize;float:right;margin-top:20px;}
+    button{width:98px;height:34px;border:none;background:#3eceb5;outline:none;color:white;font-size:$fontSize;float:right;margin-top:20px;cursor:pointer;}
+    ul{
+      height:13px;margin-top:7px;
+      li{
+        float:left;border-right: 1px solid #acacac;
+        a{display:block;color:#acacac;margin-left:11px;margin-right:11px}
+      }
+      li:last-child{border-right: none}
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

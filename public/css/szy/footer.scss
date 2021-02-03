@@ -1,0 +1,103 @@
+@import "common";
+$footerBg1:url('/img/szy/inc/pay-mh.png') no-repeat;
+$footerBg2:url('/img/szy/inc/merchant.png') no-repeat;
+$footerBg3:url('/img/szy/inc/cantact-us.png') no-repeat;
+$footerBg4:url('/img/szy/inc/help.png') no-repeat;
+
+.footer{
+	width:100%;
+	min-height:200px;
+	background:$color4;
+	border-top:3px solid $defualtColor;
+	float:left;
+	margin-top:10px;
+	.footer-center{
+		width: $widthMin;
+		min-height:200px;
+		margin: auto;
+		.c-top{
+			width:100%;
+			height:150px;
+			border-bottom:1px solid $color3;
+			li,.space{
+				height:70%;
+				float: left;
+				margin-top:20px;
+				}
+			li{
+				width:12.25%;
+				.li-t{
+					width: 100%;
+					height:40%;
+					line-height: 20px;
+					span{width:23%;height:80%;display: inline-block;}
+					.span1{background:$footerBg1;}
+					.span2{background:$footerBg2;}
+					.span3{background:$footerBg3;}
+					.span4{background:$footerBg4;}
+					div{
+						width: 70%;
+						height: 80%;
+						line-height: 40px;
+						float: right;
+						b{
+							font-size: $fontSize;
+							color:$color2;
+						}
+					} 
+				}
+				.li-f{
+					width:100%;
+					height:50%;
+					div{width:100%;height:48%;
+						a{font-size:$fontSizeMin;color:$color2;margin-right:3px;}
+						a:hover{color:$defualtColor;}
+					}
+				}
+			}
+			.space{
+				width: 17%;
+				div{width:50%;height:100%;border-right:1px solid $color1;}
+			}
+		}
+		.c-footer{
+			width: 100%;
+			height:170px;
+			margin-top:15px;
+			margin-bottom:15px;
+			.f-l{
+				width:150px;
+				height:150px;
+				border:1px solid $color3;
+				float: left; 
+
+				img{
+					width:150px;
+					height: 150px;  
+				}
+			}
+			.f-r{
+				min-width:80%;
+				height:150px;
+				margin-left:5%;
+				float:left;
+				li{
+					width: 100%;
+					height:15%;
+					margin-top:10px;
+					color: $color2;
+					font-size: $fontSize;
+					a{
+					color: $color2;
+					font-size: $fontSize;
+					}
+					a:hover{color:$defualtColor;}
+					
+				}
+				li:nth-child(5n+1){
+					margin-top:0px;
+				}
+			}
+		}
+	}
+}

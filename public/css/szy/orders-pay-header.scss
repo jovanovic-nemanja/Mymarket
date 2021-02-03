@@ -1,0 +1,23 @@
+.wrap{
+	header{
+		width:100%;height:101px;background:#fff;border-bottom:1px solid #cecece;
+		.left,.right{float:left;}
+		.left{
+			margin-top:10px;
+		}
+		.right{
+			width:486px;float:right;margin-top:28px;
+			ul li{
+				float:left;
+				.step_no{position: relative;width:162px;height:5px;}
+			 	.step_no span{display:inline-block;width:20px;height:20px;position: absolute;left:71px;top:-10px;
+			 		border-radius:50%;line-height:20px;text-align:center;color:#fff;}
+				.step_name{width:162px;height:22px;text-align:center;line-height:11px;margin-top:12px;color:#D7D7D7}
+				.step_first .step_name{color:#2ec3a6}
+			}
+		}
+	}
+}
+.thin-color{background:#95E0D1;}
+.deep-color{background:#2ec3a6;}
+.default-color{background:#cacaca;}

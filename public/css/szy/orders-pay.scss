@@ -1,0 +1,120 @@
+@import "common";
+@import "top";
+@import "orders-pay-header";
+@import "footer";
+
+$frame:url('/img/szy/inc/frame.png') no-repeat;	
+$frame1:url('/img/szy/inc/frame1.png') no-repeat;	
+body{
+  width: 100%;
+  min-width: 1200px;
+  font-size:12px;
+}
+.nav{width:100%;height:36px}
+.wrap{
+	width:1200px;margin:0 auto;
+	.content{
+		margin-top:27px;
+		.order_address{			
+			font-size:16px;color:#525252;
+			.inner{
+				width:100%;height:125px;overflow: hidden;cursor:pointer;
+				.list{float:left;width:234px;height:110px;margin:17px 7px 0 0;font-size:12px;line-height:18px;padding:14px 14px;
+					background:$frame1;}
+				.list:first-child{background:$frame;}
+				.list:nth-child(5n+5){margin-right:0}
+			}
+			.control{
+				a{color:#4bbc9e;font-size:12px;}
+				a:last-child{float:right;margin-top:4px;}
+			}
+			.pay_way{
+				height: 98px;width:1189px;margin-top:42px;background:#e7f7f4;font-size:17px;padding-top:16px;padding-left:11px;
+				.items{
+					margin-top:20px;
+					ul li{
+					float:left;width:109px;height:29px;border:1px solid #798281;margin-right:40px;
+					a{display:inline-block;color:#292929;width:100%;height:100%;line-height:29px;text-align:center}
+					}
+					ul li:first-child{border:1px solid #c78b8d;}
+					ul li:last-child{
+						border:1px solid #c5cecd;
+						a{color:#c5cecd;}
+					}
+				}
+				
+			}
+			
+		}
+		.order_confirm{
+			width:100%;height:64px;margin-top:32px;border-bottom:1px solid #63ae99;
+			.buy_th_title{margin-bottom: 25px;font-size:15px;color:#3b3b3b}
+			.buy_th{
+				font-size:12px;
+				.buy_td{float:left;width:68px;margin-left:56px;margin-right: 56px;color:#b5b5b5}
+				.buy_td:first-child{color:#3b3b3b;width:290px;margin-left:0}
+				.buy_td:last-child{margin-right:0}
+			}
+
+		}
+		.order_item{
+			height:110px;font-size:13px;margin-top:15px;
+			.order_itemInfo,.order_quantity,.order_privilege,.order_itemPay,.delivery_way{float:left;width:164px;height:79px}
+			.order_itemInfo{
+				width:531px;margin-right:10px;
+				.info_detail,.info_price{float:left}
+				.info_detail{
+					width:326px;
+					.info_img,.info_cell{float:left}
+					.info_img{
+						width:79px;height:79px;margin-right:8px;
+					}
+					.info_cell{
+						width:239px;height:79px;
+						a{display:inline-block;line-height:23px;color:#717171}
+						span{color:#e2b067}
+					}
+				}
+				.info_price{width:195px;height:79px;line-height:79px;text-align:center;font-weight:bold;color:#4a4a4a}
+			}
+			.order_quantity{
+				.quantity_inner{
+					width:68px;height:21px;margin-top:36px;margin-left:25px;position: relative;
+					.quantity_left_minus,.amount,.quantity_left_add{float:left;}
+					.quantity_left_minus,.quantity_left_add{display:inline-block;width:11px;height:11px;border:1px solid #b4b4b4;line-height:11px;text-align:center;cursor: pointer;}
+					.amount{width:35px;height:19px;position: absolute;left:15px;top:-5px;text-align:center;outline:none}
+					.quantity_left_add{position: absolute;left:56px;top:1px;}
+				}
+			}
+			.order_privilege,.order_itemPay{line-height:79px;text-align:center}
+			.order_itemPay{color:#F76E66;font-weight:bold;}
+			.order_itemPay span{margin-left: 30px;}
+			.delivery_way{
+				select{width:115px;height:21px;border:1px solid #b2b2b2;margin:27px 0 0 53px;outline:none;cursor: pointer;color:#787878}
+			}
+
+		}
+		.order_Ext{
+			width:1192px;height:36px;background:#f2f2f2;padding-left:8px;padding-top:14px;
+			.memo_name,.memo_detail{float:left}
+			.memo_name{margin-top:4px;}
+			.text_area_input{width:248px;height:20px;border:1px solid #cccccc;line-height:20px;outline:none}
+		}
+		.order_payinfo{
+			height:77px;line-height:77px;
+			.order_realPay{
+				float:right;
+				.realPay_title{color:#9e9e9e}
+				.order_price{font-size:17px;color:#f76e66;font-weight:bold}
+			}
+		}
+		.order_submit{
+			width:100%;height:37px;float:right;
+			.wrap{width:182px;height:37px;float:right;
+			 a{display:inline-block;width:182px;height:37px;background:#30c3a7;color:#fff;line-height:37px;text-align:center;font-size:15px;}
+			}
+		}
+
+			
+	}
+}

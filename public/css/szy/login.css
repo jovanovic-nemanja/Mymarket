@@ -1,0 +1,196 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: '宋体'; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+input, select, button, a {
+  outline: none; }
+
+.right-fixed {
+  width: 46px;
+  height: 100%;
+  position: fixed;
+  right: 0px;
+  z-index: 10000; }
+  .right-fixed .r-fixed-l {
+    width: 40px;
+    height: 100%;
+    float: left; }
+    .right-fixed .r-fixed-l .l-list {
+      width: 100%;
+      height: 200px;
+      position: relative;
+      top: 45%; }
+      .right-fixed .r-fixed-l .l-list li {
+        width: 100%;
+        height: 34px;
+        margin-top: 3px;
+        background: #31C4A8; }
+        .right-fixed .r-fixed-l .l-list li a {
+          margin: 3px 3px; }
+        .right-fixed .r-fixed-l .l-list li img {
+          width: 60%;
+          height: 60%;
+          margin: 6px 6px; }
+      .right-fixed .r-fixed-l .l-list li:hover {
+        background: #2EAF98; }
+  .right-fixed .r-fixed-r {
+    width: 6px;
+    height: 100%;
+    background: #31C4A8;
+    float: left; }
+
+.login {
+  width: 100%;
+  height: 100%; }
+  .login .l-title {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #ccc; }
+    .login .l-title .center {
+      width: 1200px;
+      margin: 0 auto;
+      height: 100%; }
+      .login .l-title .center .left {
+        height: 75px;
+        width: 226px;
+        position: relative;
+        top: 20px;
+        float: left; }
+        .login .l-title .center .left img {
+          width: 100%;
+          height: 100%; }
+      .login .l-title .center .right {
+        width: 600px;
+        height: 100%;
+        float: right; }
+        .login .l-title .center .right li {
+          width: 30%;
+          height: 40px;
+          float: left;
+          margin-left: 3%;
+          margin-top: 50px; }
+          .login .l-title .center .right li img {
+            width: 33px;
+            height: 33px; }
+          .login .l-title .center .right li span {
+            height: 35px;
+            min-width: 50%;
+            font-size: 20px;
+            color: #6A6A6A;
+            position: relative;
+            bottom: 10px; }
+  .login .content {
+    width: 100%;
+    height: 650px;
+    background: url("/img/szy/inc/login-bg.png") no-repeat;
+    margin-top: 60px; }
+    .login .content .operate {
+      width: 340px;
+      min-height: 300px;
+      background: white;
+      margin-left: 60%;
+      position: relative;
+      top: 20%;
+      padding: 10px; }
+      .login .content .operate .center {
+        width: 90%;
+        height: 280px;
+        margin: 15px; }
+        .login .content .operate .center li {
+          width: 100%;
+          height: 15%;
+          margin-top: 5%; }
+          .login .content .operate .center li .user-s {
+            width: 14%;
+            height: 37px;
+            float: left;
+            background: #ccc; }
+            .login .content .operate .center li .user-s div {
+              width: 100%;
+              height: 100%;
+              background: url("/img/szy/inc/white-user.png") no-repeat;
+              margin-top: 12px;
+              margin-left: 15px; }
+          .login .content .operate .center li input {
+            border: 1px solid #ccc;
+            border-left: none;
+            color: #4D4D4D;
+            font-size: 15px; }
+          .login .content .operate .center li .pass-s {
+            width: 14%;
+            height: 37px;
+            float: left;
+            background: #ccc; }
+            .login .content .operate .center li .pass-s div {
+              width: 100%;
+              height: 100%;
+              background: url("/img/szy/inc/white-suo.png") no-repeat;
+              margin-top: 12px;
+              margin-left: 15px; }
+          .login .content .operate .center li .user-i {
+            width: 85%;
+            height: 35px; }
+          .login .content .operate .center li .pass-i {
+            width: 85%;
+            height: 35px; }
+          .login .content .operate .center li .submit {
+            width: 100%;
+            height: 35px;
+            background: #FAC14B;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            border: none; }
+          .login .content .operate .center li .submit:active {
+            background: orange; }
+          .login .content .operate .center li .check {
+            width: 50%;
+            height: 100%;
+            font-size: 15px;
+            color: #6A6A6A; }
+            .login .content .operate .center li .check input {
+              width: 16px;
+              height: 16px;
+              border: 1px solid #ccc;
+              background: white;
+              margin-top: 3px; }
+          .login .content .operate .center li .wj {
+            float: right; }
+            .login .content .operate .center li .wj a {
+              font-size: 15px;
+              color: #6A6A6A; }
+          .login .content .operate .center li .register {
+            float: right; }
+            .login .content .operate .center li .register a {
+              font-size: 15px;
+              color: orange; }
+        .login .content .operate .center .border {
+          border-bottom: 1px solid #ccc;
+          color: #4D4D4D;
+          font-size: 20px; }
+          .login .content .operate .center .border div {
+            float: right;
+            font-size: 15px;
+            color: #6A6A6A; }
+            .login .content .operate .center .border div a {
+              font-size: 15px;
+              color: orange; }
+  .login .footer {
+    width: 500px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 12px;
+    color: #ccc;
+    margin: auto; }
+
+/*# sourceMappingURL=login.css.map */
